@@ -1,0 +1,11 @@
+transaction_id,vendor,amount,date,location,device,time
+TX1001,Kumar,15000,2026-03-05,Chennai,mobile,day
+TX1002,Ravi,5000,2026-03-05,Chennai,mobile,day
+TX1003,Kumar Textiles,15000,2026-03-05,Chennai,web,day
+TX1004,Suresh,45000,2026-03-06,Delhi,web,night
+TX1005,Anand,7000,2026-03-05,Chennai,mobile,day
+TX1006,Kumar,15000,2026-03-05,Chennai,mobile,day
+TX1007,Ravi Traders,5000,2026-03-05,Chennai,web,day
+TX1008,Suresh,48000,2026-03-06,Unknown,web,night
+TX1009,Kumar Stores,15000,2026-03-05,Chennai,mobile,day
+TX1010,Anand,7000,2026-03-05,Mumbai,mobile,day

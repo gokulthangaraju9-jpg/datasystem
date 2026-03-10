@@ -1,0 +1,11 @@
+amount,location,device,time,fraud
+15000,Chennai,mobile,day,0
+5000,Chennai,mobile,day,0
+15000,Chennai,web,day,0
+45000,Delhi,web,night,1
+7000,Chennai,mobile,day,0
+15000,Chennai,mobile,day,0
+5000,Chennai,web,day,0
+48000,Unknown,web,night,1
+15000,Chennai,mobile,day,0
+7000,Mumbai,mobile,day,0

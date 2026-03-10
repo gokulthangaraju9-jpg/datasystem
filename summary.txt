@@ -1,0 +1,20 @@
+Bank Reconciliation & Fraud Detection System
+
+Frontend Tools Used:
+1. React (Vite): The core UI framework used to build the responsive dashboard.
+2. TailwindCSS: Used for styling, including the beautiful animated background and modern glassmorphism (translucency) effects.
+3. Framer Motion: Used to animate the components loading in initially (the floating in effects).
+4. Lucide React: Used for the clean, professional SVG icons (like the checkmarks and alerts).
+
+Backend Tools Used:
+1. Python (Flask): The lightweight server routing the APIs.
+2. Pandas: The data processing engine used to quickly load and parse the CSV datasets in memory.
+3. Telegram Bot API: Used to send the final POST requests directly to your Telegram App via "2.0k_bot".
+
+Matching Algorithm Used (Updated to Exact Constraints):
+As per your diagram flow, we have replaced the fuzzy matching and ML prediction models with a strict constraint check:
+1. Parse the uploaded Bank CSV and the internal ERP dataset.
+2. Check if Bank `transaction_id` matches the ERP `transaction_id`.
+3. If they match, strictly compare `bank.amount == erp.amount`.
+4. If the amounts match exactly, the row successfully drops into the Green "Matched" bucket.
+5. If the amounts do NOT match exactly, it drops into the Red "Mismatched" bucket, flags it as HIGH RISK, and instantly fires the alert to your configured Telegram Chat ID containing the precise mismatched values.
